@@ -1,0 +1,17 @@
+{
+  "name": "MyBower",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "bower_components/",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
