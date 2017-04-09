@@ -145,7 +145,7 @@ body {
   cursor: pointer;
 }
 
-.bol {
+.title {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -161,7 +161,7 @@ body {
   padding-top: 30px;
 }
 
-.span {
+.main-line {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -176,13 +176,13 @@ body {
           justify-content: space-around;
 }
 
-.span1 {
+.main-line-1 {
   width: 300px;
   height: 5px;
   background-color: #00796b;
 }
 
-.span2 {
+.main-line-2 {
   width: 100px;
   height: 5px;
   background-color: #00796b;
@@ -191,7 +191,7 @@ body {
           align-self: flex-end;
 }
 
-.line {
+.side-line {
   background-color: #00796b;
   width: 6.6px;
   height: 330px;
@@ -257,10 +257,10 @@ body {
   top: 220px;
 }
 
-.bol-bg svg {
+.svg-1 {
+  background: url("../img/svg/ic_block_gray.svg") no-repeat top center;
   width: 234px;
   height: 234px;
-  fill: #f2f2f2;
 }
 
 .nav-bottom {
@@ -284,9 +284,11 @@ body {
 }
 
 .mouse {
+  background: url("../img/svg/ic_mouse_gray_24px.svg") no-repeat top center;
+  background-size: 34px;
   width: 34px;
   height: 34px;
-  fill: #cccccc;
+  margin: 0 auto;
 }
 
 .page-nav {
@@ -310,14 +312,57 @@ body {
           order: -1;
 }
 
-.page-black {
+.page-gray {
+  background: url("../img/svg/ic_bug_report_gray_24px.svg") no-repeat top center;
+  background-size: 34px 34px;
   width: 34px;
   height: 34px;
-  fill: black;
 }
 
 .page-active {
+  background: url("../img/svg/ic_bug_report_green_24px.svg") no-repeat top center;
+  background-size: 34px 34px;
   width: 34px;
   height: 34px;
-  fill: #00796b;
+}
+
+.items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 140px;
+}
+
+.item {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.item img {
+  width: 83px;
+  height: 83px;
+}
+
+.item p {
+  text-align: center;
+  margin-top: auto;
+  font-size: 21px;
+}
+
+.tesis {
+  margin: 0 auto;
+  margin-top: 90px;
+  padding-left: 150px;
+  width: 400px;
+}
+
+.tesis p {
+  font-size: 16px;
+  font-weight: 500;
 }
