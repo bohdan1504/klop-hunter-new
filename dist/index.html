@@ -31,8 +31,70 @@
 <body data-hijacking="on" data-animation="rotate">
 	
 	<div class="w">
-		
 		<section class="cd-section visible" id="section1">
+			<div>
+				<div class="block blockHeadline">
+					<div class="headline">
+						<div>
+							<p class="logoText">УНИЧТОЖЕНИЕ НАСЕКОМЫХ,<br>ГРЫЗУНОВ, ПЛЕСЕНИ И ЗАПАХОВ<br>ПО МОСКВЕ И МО</p>
+						</div>
+						<div class="topCenter">
+							<div class="wrapBut">
+								<button type="button" class="button butTop" onclick="data('#formh3','Бесплатный выезд специалиста','Оставьте Ваши контакты и специалист приедет к Вам в течение 3 часов','Бесплатный выезд','Бесплатный выезд в футере');">БЕСПЛАТНЫЙ вызов СПЕЦИАЛИСТА
+								</button></div>
+							</div>
+							<div class="topContacts">
+								<a href="tel:+7 (495) 776-17-43" class="phoneTop"><span>+7 (495) 908-62-99</span></a>
+								<a class="callBack" href="#" onclick="data('#formh3','Заказать звонок','Укажите Ваш телефон и мы свяжемся с Вами для уточнения деталей','Заказать звонок','Заказать звонок в шапке'); return false;">заказать звонок</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="block form1block">
+						<div class="content">
+							<p class="fontBann1">ИЗБАВИМ ВАС</p>
+							<p class="fontBann2">от тараканов, муравьёв, клопов, клещей,<br>крыс, мышей, плесени.</p>
+							<p class="fontBann3">УЖЕ СЕГОДНЯ.</p>
+							<div class="bannContent">
+								<p class="bannContentTit">Уничтожение</p>
+								<p class="bannContentPodpis">насекомых, грызунов, плесени и неприятных запахов</p>
+								<div class="bannIco">
+									<div class="blBannContent left">
+										<p>за 1 час <span>в день обращения</span></p>
+									</div>
+									<div class="blBannContent right">
+										<p>с гарантией <span>на 1 год!</span></p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<!--ФОРМа !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+						<div class="wrapTestForm">
+							<form id="form1" class="form1" method="POST" action="sendmail.php">
+								<div class="loadBar"></div>
+								<div id="fc1">
+									<p class="label">Срочный вызов специалиста</p>
+									<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
+									<div class="wrapInput">
+										<input type="text" class="editbox name required" name="name" placeholder="Имя" txt="" value="" required="">
+									</div>
+									<div class="wrapInput">
+										<input type="text" class="editbox tel required" name="tel" placeholder="Телефон" txt="" value="" required="">
+									</div>
+									<div class="wrapBut">
+										<button type="submit" class="button butForm" );">Узнать тонкости</button>
+										<!-- onclick="sending('#form1', '#fc1' -->
+										<input type="hidden" name="whatorder" value="Узнать тонкости в блоке теста">
+										<input type="hidden" name="tovar" value="">
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- Конец формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->		
+					</div>
+				</div>
+			</section>
+		<!-- <section class="cd-section visible" id="section2">
 			<div>
 				<div class="consult">
 					<button>Бесплатная консультация</button>
@@ -75,9 +137,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="cd-section" id="section2">
+		<section class="cd-section" id="section3">
 			<div>
 				<div class="consult">
 					<button>Бесплатная консультация</button>
@@ -126,7 +188,7 @@
 			</div>
 		</section>
 
-		<section class="cd-section" id="section2">
+		<section class="cd-section" id="section4">
 			<div>
 				<div class="for-all">
 					<div class="free-consult-bgimg"></div>
@@ -162,7 +224,7 @@
 			</div>
 		</section>
 
-		<section class="cd-section" id="section3">
+		<section class="cd-section" id="section5">
 			<div>
 				<div class="consult">
 					<button>Бесплатная консультация</button>
@@ -210,7 +272,7 @@
 			</div>
 		</section>
 
-		<section class="cd-section" id="section4">
+		<section class="cd-section" id="section6">
 			<div>
 				<div class="consult">
 					<button>Бесплатная консультация</button>
@@ -240,7 +302,7 @@
 			</div>
 		</section>
 
-		<section class="cd-section" id="section5">
+		<section class="cd-section" id="section7">
 			<div>
 				<div class="consult">
 					<button>Бесплатная консультация</button>
@@ -289,14 +351,14 @@
 		</section>
 		<nav class="vertical-nav">
 			<ul>
-			<li><a href="#section1" class="active"></a></li>
-			<li><a href="#section2"></a></li>
-			<li><a href="#section3"></a></li>
-			<li><a href="#section4"></a></li>
-			<li><a href="#section5"></a></li>
-			<li><a href="#section6"></a></li>
-			<li><a href="#section7"></a></li>
-		</ul>
+				<li><a href="#section1" class="active"></a></li>
+				<li><a href="#section2"></a></li>
+				<li><a href="#section3"></a></li>
+				<li><a href="#section4"></a></li>
+				<li><a href="#section5"></a></li>
+				<li><a href="#section6"></a></li>
+				<li><a href="#section7"></a></li>
+			</ul>
 		</nav>
 		<nav>
 			<ul class="cd-vertical-nav">
