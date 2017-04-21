@@ -47,9 +47,9 @@ Main Components
   }
 }
 
-@media only screen and (max-width: 1050px) {
-  .cd-section {
-  height: auto;
+@media only screen and (max-width: 1050px){
+  .cd-section{
+    height: auto !important
   }
 }
 

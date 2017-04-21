@@ -798,6 +798,9 @@ a.button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -810,6 +813,13 @@ a.button {
   margin-left: 60px;
   margin-right: 60px;
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: -webkit-calc(16.666666666666668% - 30px);
+  width: calc(16.666666666666668% - 30px);
 }
 
 .item img {
@@ -911,11 +921,13 @@ a.button {
   height: 32px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 10px;
   padding-left: 7px;
 }
 
 .free-consult-block .input-div button {
   margin-top: 55px;
+  margin-bottom: 20px;
   width: 400px;
   height: 45px;
   font-size: 22px;
@@ -950,6 +962,8 @@ a.button {
 
 .why-us-block {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -958,11 +972,19 @@ a.button {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin-top: 80px;
-  margin-left: 100px;
 }
 
 .why-us-block .item {
   text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -971,6 +993,10 @@ a.button {
   word-wrap: break-word;
   width: -webkit-calc(50% - 30px);
   width: calc(50% - 30px);
+}
+
+.why-us-block .item :last-child {
+  margin-bottom: 0;
 }
 
 .why-us-block .item .title {
@@ -1017,9 +1043,9 @@ a.button {
 }
 
 .sertificates {
-  margin: 70px auto 0;
+  margin: 50px auto 0;
   width: 78%;
-  height: 53vh;
+  height: 57vh;
   background-color: #f9f9f9;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1032,7 +1058,7 @@ a.button {
 }
 
 .sertificates img {
-  height: 71%;
+  height: 75%;
   width: 19%;
   background-color: red;
   margin: 0 auto;
@@ -1040,6 +1066,8 @@ a.button {
 
 .how-we-work {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1047,17 +1075,20 @@ a.button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 80px;
-  margin-left: 100px;
 }
 
 .how-we-work .item {
   text-align: left;
-  margin-bottom: 100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 15px;
@@ -1067,21 +1098,23 @@ a.button {
   width: calc(41.66666666666667% - 30px);
 }
 
+.how-we-work .item :last-child {
+  margin-bottom: 0;
+}
+
 .how-we-work .item .number {
   height: 100%;
   font-size: 51px;
   color: #00796b;
-  margin-right: 30px;
+  margin-right: 20px;
   font-weight: bold;
 }
 
 .how-we-work .item .text {
   font-size: 15px;
   line-height: 1.25;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-              -ms-grid-row-align: center;
-          align-self: center;
+  margin-top: 30px;
+  margin-left: 40px;
 }
 
 .how-we-work .bg1 {
@@ -1210,12 +1243,53 @@ a.button {
 }
 
 @media screen and (max-width: 1050px) {
-  #section4 {
-    margin-bottom: 200px;
+  #section1 .headline {
+    display: none;
   }
 
-  #section6 {
-    margin-bottom: -70px;
+  .sertificates {
+    margin: 40px auto 0;
+    width: 100%;
+    height: auto;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .sertificates img {
+    height: auto;
+    width: 250px;
+    margin: 20px auto;
+  }
+
+  .title {
+    margin-left: 50px;
+  }
+
+  .why-us-block {
+    margin-left: 10px;
+  }
+
+  .how-we-work {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .consult {
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    border: none;
+    padding: 5px;
+    background: #f9f9f9;
+  }
+
+  .consult button {
+    font-size: 15px;
   }
 
   .form1block {
@@ -1224,15 +1298,6 @@ a.button {
 
   .wrapTestForm {
     left: -50px;
-  }
-
-  .consult {
-    position: static;
-    margin-top: 100px;
-  }
-
-  .consult button {
-    font-size: 20px;
   }
 
   .title {
@@ -1305,7 +1370,7 @@ a.button {
 
   .for-all {
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .free-consult-bgimg {
@@ -1313,43 +1378,46 @@ a.button {
     margin-bottom: -600px;
   }
 
-  #section3 {
-    margin-top: 190px;
-  }
-
   #section3 .consult {
     display: none;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .consult {
-    margin-top: 120px;
-  }
-
-  .title {
-    margin-left: 50px;
-  }
-
-  #section3 {
-    margin-top: 250px;
-  }
-
-  .why-us-block {
-    margin-left: 10px;
-  }
-
-  .how-we-work {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    margin-top: 100px;
+@media screen and (max-width: 960px) {
+  .item {
+    width: -webkit-calc(25% - 30px);
+    width: calc(25% - 30px);
   }
 }
 
-@media only screen and (max-width: 820px) {
+@media screen and (max-width: 780px) {
+  .item {
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px);
+  }
+
+  .how-we-work .item {
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+    -webkit-justify-content: space-between !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+
+  .items .item {
+    margin-bottom: 40px;
+  }
+
   .wrapTestForm {
     position: relative;
     left: 10px;
@@ -1427,5 +1495,212 @@ a.button {
 
   .butForm {
     height: 34px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .item {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .why-us-block .item {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .how-we-work .item {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .sertificates img {
+    width: 200px;
+  }
+
+  #section6 .main-line {
+    margin-left: -100px;
+  }
+
+  .why-us-block .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .how-we-work {
+    margin-top: 70px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+
+  .how-we-work .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .how-we-work .item .number {
+    margin: 0;
+  }
+
+  .how-we-work .item .text {
+    margin: 0;
+  }
+
+  .wrapTestForm {
+    z-index: 1;
+    margin: 0 auto;
+    height: 260px;
+    top: 40px;
+    width: 260px;
+    float: none;
+    margin-top: 170px;
+  }
+
+  .form1 {
+    z-index: 100;
+    top: 0px;
+    margin: auto;
+    height: 275px;
+    position: absolute;
+  }
+
+  .button {
+    width: 300px;
+  }
+
+  .butForm {
+    width: 200px;
+  }
+
+  .content,
+  .headline {
+    width: 300px;
+  }
+
+  .topCenter {
+    display: none !important;
+  }
+
+  .logo img {
+    max-width: 85%;
+  }
+
+  .phoneTop {
+    font-size: 16px;
+    height: 16px;
+  }
+
+  .callBack {
+    font-size: 14px;
+    height: 14px;
+    display: block;
+    display: none;
+  }
+
+  .blockHeadline {
+    padding: 5px 0px 7px 0px;
+  }
+
+  .form1block .content {
+    padding-top: 58px;
+  }
+
+  .fontBann1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .fontBann2 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .fontBann3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .bannContent {
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+
+  .bannContentTit {
+    font-size: 28px;
+  }
+
+  .blBannContent {
+    background-size: 20px auto;
+    padding-left: 32px;
+  }
+
+  .blBannContent p {
+    font-size: 16px;
+  }
+
+  .blBannContent p span {
+    font-size: 11px;
+  }
+
+  .form1block {
+    background-position: left center;
+    height: 650px;
+  }
+
+  .clockFormTit {
+    font-size: 20px;
+    margin: 6px 0px;
+  }
+
+  .clockFormPodpis {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .label span {
+    font-size: 16px;
+  }
+
+  .labels {
+    font-size: 14px;
+    margin: 0px auto 14px auto;
+  }
+
+  .form1 .wrapInput,
+  .form1 .wrapBut {
+    margin: 0px 0px 10px 0px;
   }
 }
