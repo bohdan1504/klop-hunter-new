@@ -553,8 +553,8 @@ a.button
 	.wrapTest
 	  width: 470px
 @media screen and (max-width: 1050px)
+	
 	#section1
-
 		.headline
 			display: none
 	.sertificates
@@ -698,6 +698,27 @@ a.button
 			border-radius: 5px
 			outline: none
 			background-color: $main-color
+			cursor: pointer
+@media only screen and (max-width: 820px)
+	.bannIco
+		display: flex
+		flex-wrap: wrap
+		div
+			margin-left: 70px
+			margin-bottom: 20px
+			flex-basis: 300px
+	.wrapTestForm
+		position: relative
+		right: 10px
+	.fontBann2
+		max-width: 500px
+	.bannContent
+		margin-left: -20px
+		max-width: 450px
+		
+	.bannContentPodpis
+		max-width: 450px
+	
 @media only screen and (max-width: 780px)
 	.main-line
 		display: none
@@ -709,9 +730,18 @@ a.button
 	.wrapTestForm
 		position: relative
 		left: 10px
-		margin-top: 27px
+		margin-top: -70px
 	.content, .headline
 		width: 660px
+	.bannContentTit
+	  font-size: 37px
+	  text-align: left
+	  margin-left: 20px
+	  line-height: 40px
+	.bannContentPodpis
+		text-align: left
+		margin-left: 20px
+		max-width: 300px
 	.button
 		font-size: 12px
 		height: 34px
@@ -746,7 +776,6 @@ a.button
 		left: -15px
 
 	.form1
-		top: -130px
 		width: 260px
 		padding: 20px 15px 0px 15px
 	.wrapBut
@@ -940,54 +969,32 @@ a.button
 
 
 @media screen and (max-width: 560px)
-	.consult
-		margin: 0
-		padding: 2px
+	.input-div
 		button
-			font-size: 13px
-			padding: 5px 16px
-	.sertificates
-		img
-			width: 200px
-	.why-us-block
-		.item
-			display: flex
-			flex-direction: column
-			align-items: center
-			text-align: center
-			.title
-				margin-left: 0
-			.text
-				margin-left: 0
-	.how-we-work
-		margin-top: 70px
-		justify-content: center
+			width: 300px !important
+			margin-top: 20px !important
+	.bannContent
+		margin: 0
+		margin-top: 20px
+	.bannContentTit
 		text-align: center
-		.item
-			display: flex
-			flex-direction: column
-			align-items: center
-			text-align: center
-			margin-bottom: 40px
-			.number
-				margin: 0
-			.text	
-				margin: 0
-
+		margin: 0 auto
+	.bannContentPodpis
+		text-align: center
+		margin-left: 0
+	.bannIco
+		display: block
+		div
+			margin-left: 0
 	.wrapTestForm
-	  z-index: 1
-	  margin: 0 auto
-	  height: 260px
-	  top: 40px
-	  width: 260px
+	  margin: auto
+	  top: -130px
 	  float: none
-	  margin-top: 170px
-
 	.form1
 	  z-index: 100
-	  top: 0px
 	  margin: auto
-	  height: 275px
+	  margin-left: 12px
+	  height: auto
 	  position: absolute
 
 	.button
@@ -1073,3 +1080,38 @@ a.button
 	.form1
 	  .wrapInput, .wrapBut
 	    margin: 0px 0px 10px 0px
+	.consult
+		margin: 0
+		padding: 2px
+		button
+			font-size: 13px
+			padding: 5px 16px
+	.sertificates
+		img
+			width: 200px
+	.why-us-block
+		.item
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			.title
+				margin-left: 0
+			.text
+				margin-left: 0
+	.how-we-work
+		margin-top: 70px
+		justify-content: center
+		text-align: center
+		.item
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			margin-bottom: 40px
+			.number
+				margin: 0
+			.text	
+				margin: 0
+
+	

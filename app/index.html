@@ -76,10 +76,10 @@
 									<p class="label">Срочный вызов специалиста</p>
 									<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
 									<div class="wrapInput">
-										<input type="text" class="editbox name required" name="name" placeholder="Имя" txt="" value="" required="">
+										<input type="text" class="editbox name required" name="name1" placeholder="Имя" txt="" value="" required="">
 									</div>
 									<div class="wrapInput">
-										<input type="text" class="editbox tel required" name="tel" placeholder="Телефон" txt="" value="" required="">
+										<input type="text" class="editbox tel required" name="tel1" placeholder="Телефон" txt="" value="" required="">
 									</div>
 									<div class="wrapBut">
 										<button type="submit" class="button butForm" );">Узнать тонкости</button>
@@ -204,9 +204,11 @@
 							<div class="free-consult-title">Укажите Ваши контакты</div>
 							<div class="text">наш специалист бесплатно проведет <br> оценку, скажет точную стоимость, и подберет <br> подходящий метод борьбы и препараты.</div>
 							<div class="input-div">
-								<input type="text" name="name">
-								<input type="tel" name="phone"><br>
-								<button>Позвоните мне</button>
+								<form action="sendmail.php" method="POST">
+									<input type="text" name="name2" required="">
+									<input type="tel" name="tel2" required=""><br>
+									<button>Позвоните мне</button>
+								</form>
 							</div>
 						</div>
 						<div class="nav-bottom nav-free-consult">
