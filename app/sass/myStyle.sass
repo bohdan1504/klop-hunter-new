@@ -13,12 +13,12 @@ section>div
 
 body
 	font-family: Roboto
-	overflow-x: hidden
+	//overflow-x: hidden
 	background-color: white
 .w
 	max-width: 1600px
 	margin: 0 auto
-
+	overflow-x: hidden
 
 // first block
 .content
@@ -26,9 +26,6 @@ body
   margin: auto
   position: relative
   font-family: 'museo'
-
-
-
 .button
   position: relative
   text-align: center
@@ -631,7 +628,7 @@ a.button
 	.free-consult-bgimg
 		height: 600px
 		margin-bottom: -600px
-	#section3 
+	#section4, #section5, #section6, #section7  
 		.consult
 			display: none
 
@@ -702,6 +699,8 @@ a.button
 			outline: none
 			background-color: $main-color
 @media only screen and (max-width: 780px)
+	.main-line
+		display: none
 	.items
 		display: flex
 		justify-content: space-between !important
@@ -748,7 +747,6 @@ a.button
 
 	.form1
 		top: -130px
-		height: 315px
 		width: 260px
 		padding: 20px 15px 0px 15px
 	.wrapBut
@@ -942,18 +940,25 @@ a.button
 
 
 @media screen and (max-width: 560px)
+	.consult
+		margin: 0
+		padding: 2px
+		button
+			font-size: 13px
+			padding: 5px 16px
 	.sertificates
 		img
 			width: 200px
-	#section6
-		.main-line
-			margin-left: -100px
 	.why-us-block
 		.item
 			display: flex
 			flex-direction: column
 			align-items: center
 			text-align: center
+			.title
+				margin-left: 0
+			.text
+				margin-left: 0
 	.how-we-work
 		margin-top: 70px
 		justify-content: center

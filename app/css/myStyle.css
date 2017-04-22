@@ -114,13 +114,13 @@ section > div {
 
 body {
   font-family: Roboto;
-  overflow-x: hidden;
   background-color: white;
 }
 
 .w {
   max-width: 1600px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .content {
@@ -1378,7 +1378,10 @@ a.button {
     margin-bottom: -600px;
   }
 
-  #section3 .consult {
+  #section4 .consult,
+  #section5 .consult,
+  #section6 .consult,
+  #section7 .consult {
     display: none;
   }
 }
@@ -1403,6 +1406,10 @@ a.button {
 }
 
 @media only screen and (max-width: 780px) {
+  .main-line {
+    display: none;
+  }
+
   .items {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1475,7 +1482,6 @@ a.button {
 
   .form1 {
     top: -130px;
-    height: 315px;
     width: 260px;
     padding: 20px 15px 0px 15px;
   }
@@ -1514,12 +1520,18 @@ a.button {
     width: calc(100% - 30px);
   }
 
-  .sertificates img {
-    width: 200px;
+  .consult {
+    margin: 0;
+    padding: 2px;
   }
 
-  #section6 .main-line {
-    margin-left: -100px;
+  .consult button {
+    font-size: 13px;
+    padding: 5px 16px;
+  }
+
+  .sertificates img {
+    width: 200px;
   }
 
   .why-us-block .item {
@@ -1537,6 +1549,14 @@ a.button {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+
+  .why-us-block .item .title {
+    margin-left: 0;
+  }
+
+  .why-us-block .item .text {
+    margin-left: 0;
   }
 
   .how-we-work {
