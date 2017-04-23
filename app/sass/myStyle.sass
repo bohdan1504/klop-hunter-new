@@ -14,7 +14,7 @@ section>div
 body
 	font-family: Roboto
 	//overflow-x: hidden
-	background-color: white
+	background-color: red
 .w
 	max-width: 1600px
 	margin: 0 auto
@@ -174,18 +174,24 @@ a.button
 .form1block
   height: 800px
   text-align: center
-  background-color: #fff
-  background-repeat: no-repeat
-  background-image: url('../img/banner.jpg')
-  background-size: cover
   position: relative
   font-family: 'museo', 'Arial', sans-serif
+  .bgImg
+	  background-color: #fff
+	  background-image: url('../img/banner.jpg')
+	  background-repeat: no-repeat
+	  background-size: cover
+	  filter: brightness(.55) blur(5px)
+	  transform: scale(1.05)
+	  position: absolute
+	  width: 100%
+	  height: 800px
   .content
     padding-top: 152px
 
 .bannContent
   float: left
-  width: 520px;
+  width: 520px
   position: relative
   text-align: center
   margin-top: 50px
@@ -366,12 +372,12 @@ a.button
 	height: 2px
 	background: $main-color
 
-// main head 
+// main head
 .consult
 	position: relative
 	top: 0
 	width: 100%
-	text-align: center 
+	text-align: center
 	border: 2px #ececec solid
 	padding: 12px 0
 	z-index: 100
@@ -382,21 +388,21 @@ a.button
 		color: white
 		font-size: 25px
 		padding: 8px 28px
-		border-radius: 5px 
+		border-radius: 5px
 	& :hover
 		cursor: pointer
 .title
 	z-index: 2
 	display: flex
-	justify-content: space-between	
+	justify-content: space-between
 	font-size: 30px
 	font-family: Roboto
 	text-transform: uppercase
 	margin-left: 100px
 	padding-top: 30px
-// end of main head 
+// end of main head
 
-// boli  
+// boli
 .main-line
 	display: flex
 	flex-direction: column
@@ -451,9 +457,9 @@ a.button
 	background: url('../img/svg/ic_block_gray.svg') no-repeat top center
 	width: 234px
 	height: 234px
-// end of boli 
+// end of boli
 
-// nav-bottom 
+// nav-bottom
 .nav-bottom
 	width: 100%
 	display: flex
@@ -486,7 +492,7 @@ a.button
 	background-size: 34px 34px
 	width: 34px
 	height: 34px
-// end of nav-bottom 
+// end of nav-bottom
 
 // items
 .items
@@ -519,7 +525,7 @@ a.button
 	p
 		font-size: 16px
 		font-weight: 500
-// end of items 
+// end of items
 
 @media screen and (max-width: 1200px)
 	.content, .headline
@@ -553,7 +559,7 @@ a.button
 	.wrapTest
 	  width: 470px
 @media screen and (max-width: 1050px)
-	
+
 	#section1
 		.headline
 			display: none
@@ -621,19 +627,19 @@ a.button
 	.items
 		margin-top: 100px
 	.tesis
-		margin-top: 50px 
+		margin-top: 50px
 	.for-all
 		height: auto
 		margin-top: 50px
 	.free-consult-bgimg
 		height: 600px
 		margin-bottom: -600px
-	#section4, #section5, #section6, #section7  
+	#section4, #section5, #section6, #section7
 		.consult
 			display: none
 
 
-// free consult 
+// free consult
 .for-all
 	width: 100%
 	height: 100vh
@@ -715,10 +721,10 @@ a.button
 	.bannContent
 		margin-left: -20px
 		max-width: 450px
-		
+
 	.bannContentPodpis
 		max-width: 450px
-	
+
 @media only screen and (max-width: 780px)
 	.main-line
 		display: none
@@ -813,7 +819,7 @@ a.button
 	margin: 0 auto
 	display: flex
 	flex-wrap: wrap
-	margin: 
+	margin:
 		top: 80px
 	.item
 		text-align: left
@@ -858,7 +864,6 @@ a.button
 .sertificates
 	margin: 50px auto 0
 	width: 78%
-	height: 57vh
 	background-color: $gray-color
 	display: flex
 	align-items: center
@@ -877,7 +882,7 @@ a.button
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
-	margin: 
+	margin:
 		top: 80px
 	.item
 		text-align: left
@@ -911,7 +916,7 @@ a.button
 	.bg4
 		background: url('../img/svg/ic_location_searching_gray.svg') no-repeat left center
 	.bg5
-		background: url('../img/svg/ic_bug_report_gray.svg') no-repeat left center	
+		background: url('../img/svg/ic_bug_report_gray.svg') no-repeat left center
 		background-size: 77px 87px !important
 		margin-left: 121px !important
 	.bg1, .bg2, .bg3, .bg4, .bg5
@@ -1111,7 +1116,5 @@ a.button
 			margin-bottom: 40px
 			.number
 				margin: 0
-			.text	
+			.text
 				margin: 0
-
-	
