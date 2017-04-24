@@ -29,12 +29,17 @@
 
 </head>
 <body data-hijacking="on" data-animation="none">
-<div id="modal_form"><!-- Сaмo oкнo -->
-		<span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
-		<input type="text" name="name" placeholder="Ваше имя"><br>
-		<input type="tel" name="tel" placeholder="Телефон"><br>
-		<button>Позвоните мне</button>
-</div>
+<form id="modal_form" class="form1"><!-- Сaмo oкнo -->
+	<p class="label">Бесплатная консультация</p>
+	<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
+		<div class="wrapInput">
+			<input type="text" name="name" placeholder="Ваше имя" class="editbox name required">
+		</div>
+		<div class="wrapInput">
+			<input type="tel" name="tel" placeholder="Телефон" class="editbox tel required">
+		</div>
+		<button class="button butForm">Позвоните мне</button>
+</form>
 	<div id="overlay"></div><!-- Пoдлoжкa -->
 	<div class="w">
 		<section class="cd-section visible" id="section1">
