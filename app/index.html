@@ -29,7 +29,13 @@
 
 </head>
 <body data-hijacking="on" data-animation="none">
-
+<div id="modal_form"><!-- Сaмo oкнo --> 
+		<span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
+		<input type="text" name="name" placeholder="Ваше имя"><br>
+		<input type="tel" name="tel" placeholder="Телефон"><br>
+		<button>Позвоните мне</button>
+	</div>
+	<div id="overlay"></div><!-- Пoдлoжкa -->
 	<div class="w">
 		<section class="cd-section visible" id="section1">
 			<div>
@@ -40,61 +46,62 @@
 						</div>
 						<div class="topCenter">
 							<div class="wrapBut">
-								<button type="button" class="button butTop" onclick="data('#formh3','Бесплатный выезд специалиста','Оставьте Ваши контакты и специалист приедет к Вам в течение 3 часов','Бесплатный выезд','Бесплатный выезд в футере');">БЕСПЛАТНЫЙ вызов СПЕЦИАЛИСТА
-								</button></div>
-							</div>
-							<div class="topContacts">
-								<a href="tel:+7 (495) 776-17-43" class="phoneTop"><span>+7 (495) 908-62-99</span></a>
-								<a class="callBack" href="#" onclick="data('#formh3','Заказать звонок','Укажите Ваш телефон и мы свяжемся с Вами для уточнения деталей','Заказать звонок','Заказать звонок в шапке'); return false;">заказать звонок</a>
+								<button type="button" class="button butTop">ПЛАТНЫЙ вызов СПЕЦИАЛИСТА
+								</button>
 							</div>
 						</div>
-					</div>
-
-					<div class="block form1block">
-						<div class="bgImg"></div>
-						<div class="content">
-							<p class="fontBann1">ИЗБАВИМ ВАС</p>
-							<p class="fontBann2">от тараканов, муравьёв, клопов, клещей,<br>крыс, мышей, плесени.</p>
-							<p class="fontBann3">УЖЕ СЕГОДНЯ.</p>
-							<div class="bannContent">
-								<p class="bannContentTit">Уничтожение</p>
-								<p class="bannContentPodpis">насекомых, грызунов, плесени и неприятных запахов</p>
-								<div class="bannIco">
-									<div class="blBannContent left">
-										<p>за 1 час <span>в день обращения</span></p>
-									</div>
-									<div class="blBannContent right">
-										<p>с гарантией <span>на 1 год!</span></p>
-									</div>
-								</div>
-							</div>
+						<div class="topContacts">
+							<a href="tel:+7 (495) 776-17-43" class="phoneTop"><span>+7 (495) 908-62-99</span></a>
+							<a class="callBack" href="#" onclick="data('#formh3','Заказать звонок','Укажите Ваш телефон и мы свяжемся с Вами для уточнения деталей','Заказать звонок','Заказать звонок в шапке'); return false;">заказать звонок</a>
 						</div>
-						<!--ФОРМа !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-						<div class="wrapTestForm">
-							<form id="form1" class="form1" method="POST" action="sendmail.php">
-								<div class="loadBar"></div>
-								<div id="fc1">
-									<p class="label">Бесплатная консультация</p>
-									<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
-									<div class="wrapInput">
-										<input type="text" class="editbox name required" name="name1" placeholder="Имя" txt="" value="" required="">
-									</div>
-									<div class="wrapInput">
-										<input type="text" class="editbox tel required" name="tel1" placeholder="Телефон" txt="" value="" required="">
-									</div>
-									<div class="wrapBut">
-										<button type="submit" class="button butForm" );">Узнать тонкости</button>
-										<!-- onclick="sending('#form1', '#fc1' -->
-										<input type="hidden" name="whatorder" value="Узнать тонкости в блоке теста">
-										<input type="hidden" name="tovar" value="">
-									</div>
-								</div>
-							</form>
-						</div>
-						<!-- Конец формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 					</div>
 				</div>
-			</section>
+
+				<div class="block form1block">
+					<div class="bgImg"></div>
+					<div class="content">
+						<p class="fontBann1">ИЗБАВИМ ВАС</p>
+						<p class="fontBann2">от тараканов, муравьёв, клопов, клещей,<br>крыс, мышей, плесени.</p>
+						<p class="fontBann3">УЖЕ СЕГОДНЯ.</p>
+						<div class="bannContent">
+							<p class="bannContentTit">Уничтожение</p>
+							<p class="bannContentPodpis">насекомых, грызунов, плесени и неприятных запахов</p>
+							<div class="bannIco">
+								<div class="blBannContent left">
+									<p>за 1 час <span>в день обращения</span></p>
+								</div>
+								<div class="blBannContent right">
+									<p>с гарантией <span>на 1 год!</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--ФОРМа !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+					<div class="wrapTestForm">
+						<form id="form1" class="form1" method="POST" action="sendmail.php">
+							<div class="loadBar"></div>
+							<div id="fc1">
+								<p class="label">Бесплатная консультация</p>
+								<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
+								<div class="wrapInput">
+									<input type="text" class="editbox name required" name="name1" placeholder="Имя" txt="" value="" required="">
+								</div>
+								<div class="wrapInput">
+									<input type="text" class="editbox tel required" name="tel1" placeholder="Телефон" txt="" value="" required="">
+								</div>
+								<div class="wrapBut">
+									<button type="submit" class="button butForm" );">Узнать тонкости</button>
+									<!-- onclick="sending('#form1', '#fc1' -->
+									<input type="hidden" name="whatorder" value="Узнать тонкости в блоке теста">
+									<input type="hidden" name="tovar" value="">
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- Конец формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+				</div>
+			</div>
+		</section>
 		<!-- <section class="cd-section visible" id="section2">
 			<div>
 				<div class="consult">
@@ -151,7 +158,7 @@
 				<div class="items">
 					<div class="item">
 						<img src="img/" alt="">
-						<p>Клопов</p>
+						<p>Клопов<a href="" id="go">+7 (495) 908-62-99</a></p>
 					</div>
 					<div class="item">
 						<img src="img/" alt="">
@@ -198,7 +205,7 @@
 							<div class="text">наш специалист бесплатно проведет <br> оценку, скажет точную стоимость, и подберет <br> подходящий метод борьбы и препараты.</div>
 							<div class="input-div">
 								<form action="sendmail.php" method="POST">
-									<input type="text" name="name2" required="">
+									<input type="text" name="name2" required="" id="forma-id">
 									<input type="tel" name="tel2" required=""><br>
 									<button>Позвоните мне</button>
 								</form>
@@ -314,8 +321,9 @@
 						<div class="bg4"></div>
 						<div class="bg5"></div>
 						<div class="number">4</div>
-						<div class="text">Уничтожение заражений, <br> мы проводим бесплатную <br>консультацию</div>
+						<div class="text">Уничтожение заражений, <br> мы проводим бесплатную <br>консультацию</div><a href="#" id="go">+7 (495) 908-62-99</a>
 					</div>
+	
 				</div>
 				<div class="nav-bottom">
 					<div class="mouse-div">
@@ -350,6 +358,8 @@
 	<script src="js/velocity.min.js"></script>
 	<script src="js/velocity.ui.min.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/common.js"></script>
+
 
 
 </body>
