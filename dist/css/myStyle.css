@@ -114,7 +114,7 @@ section > div {
 
 body {
   font-family: Roboto;
-  background-color: white;
+  background-color: red;
 }
 
 .w {
@@ -328,12 +328,23 @@ a.button {
 .form1block {
   height: 800px;
   text-align: center;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
   position: relative;
   font-family: 'museo', 'Arial', sans-serif;
+}
+
+.form1block .bgImg {
+  background-color: #fff;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.55) blur(5px);
+          filter: brightness(0.55) blur(5px);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  position: absolute;
+  width: 100%;
+  height: 800px;
 }
 
 .form1block .content {
@@ -1046,7 +1057,6 @@ a.button {
 .sertificates {
   margin: 50px auto 0;
   width: 78%;
-  height: 57vh;
   background-color: #f9f9f9;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1200,6 +1210,47 @@ a.button {
   font-style: normal;
 }
 
+.form1 {
+  background-color: rgba(0, 0, 0, 0.45);
+  border: solid 3px #00796b;
+}
+
+.form1block .content p {
+  color: white;
+}
+
+.button {
+  background: #00796b !important;
+  color: white;
+}
+
+.title {
+  padding-top: 60px;
+}
+
+.title p {
+  font-weight: 900;
+  margin-left: 8vw;
+}
+
+a.callBack {
+  color: white;
+}
+
+.label {
+  color: white;
+}
+
+.cd-vertical-nav {
+  top: auto !important;
+  bottom: 0px !important;
+  right: 5% !important;
+}
+
+.sertificates {
+  padding: 30px 0 30px 0;
+}
+
 @media screen and (max-width: 1200px) {
   .content,
   .headline {
@@ -1244,6 +1295,14 @@ a.button {
 }
 
 @media screen and (max-width: 1050px) {
+  .bg1,
+  .bg2,
+  .bg3,
+  .bg4,
+  .bg5 {
+    display: none;
+  }
+
   #section1 .headline {
     display: none;
   }
