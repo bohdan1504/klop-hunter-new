@@ -4,67 +4,27 @@ $main-color: #00796b
 $page-color: black
 $gray-color: #f9f9f9
 
-#modal_form
-  width: 300px
-  height: 400px
-  // /* Рaзмеры дoлжны быть фиксирoвaны
-  //border-radius: 5px
-  //border: 3px #000 solid
-  //background: orange
-  position: fixed
-  // /* чтoбы oкнo былo в видимoй зoне в любoм месте
-  top: 45%
-  // /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт
-  left: 50%
-  // /* пoлoвинa экрaнa слевa
-  margin-top: -200px
-  margin-left: -150px
-  // /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =)
-  display: none
-  // /* в oбычнoм сoстoянии oкнa не дoлжнo быть
-  opacity: 0
-  // /* пoлнoстью прoзрaчнo для aнимирoвaния
-  z-index: 9999
-  // /* oкнo дoлжнo быть нaибoлее бoльшем слoе
-  padding: 30px 20px
-  text-align: center
-  .button
-	  display: inline-block
-
-  #modal_close
-    width: 21px
-    height: 21px
-    position: absolute
-    top: 10px
-    right: 10px
-    cursor: pointer
-    display: block
-
-// /* Кнoпкa зaкрыть для тех ктo в тaнке)
-
-// /* Пoдлoжкa
-
-#overlay
-  z-index: 9998
-  // /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa
-  position: fixed
-  // /* всегдa перекрывaет весь сaйт
-  background-color: #000
-  // /* чернaя
-  opacity: 0.8
-  // /* нo немнoгo прoзрaчнa
-  -moz-opacity: 0.8
-  // /* фикс прозрачности для старых браузеров
-  filter: alpha(opacity = 80)
-  width: 100%
-  height: 100%
-  // /* рaзмерoм вo весь экрaн
-  top: 0
-  // /* сверху и слевa 0, oбязaтельные свoйствa!
-  left: 0
-  cursor: pointer
-  display: none
-  // /* в oбычнoм сoстoянии её нет)
+.footer
+	width: 100%
+	background-color: #eee
+	position: absolute
+	bottom: 0
+	.contentFoot
+		max-width: 960px
+		margin: 0 auto
+		display: flex
+		flex-wrap: wrap
+	a
+		color: $main-color
+.footLeft
+	flex-grow: 1
+	display: flex
+	align-items: center
+.footRight
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	margin: 15px auto
 
 
 .cbalink
@@ -77,6 +37,8 @@ section>div
 body
 	font-family: Roboto
 	//overflow-x: hidden
+.topContacts a.go
+	color: white
 .w
 	max-width: 1600px
 	margin: 0 auto
@@ -590,6 +552,11 @@ a.button
 // end of items
 
 @media screen and (max-width: 1200px)
+	.how-we-work
+		margin-top: 30px
+	.footer
+		.footRight
+			margin: 5px auto
 	.content, .headline
 	  width: 1000px
 
@@ -621,6 +588,8 @@ a.button
 	.wrapTest
 	  width: 470px
 @media screen and (max-width: 1050px)
+	.footer
+		position: static
 	.bg1, .bg2, .bg3, .bg4, .bg5
 		display: none
 	#section1
@@ -1209,3 +1178,66 @@ a.callBack
 	right: 5%!important
 .sertificates
 	padding: 30px 0 30px 0
+
+#modal_form
+  width: 300px
+  height: 400px
+  // /* Рaзмеры дoлжны быть фиксирoвaны
+  //border-radius: 5px
+  //border: 3px #000 solid
+  //background: orange
+  position: fixed
+  // /* чтoбы oкнo былo в видимoй зoне в любoм месте
+  top: 45%
+  // /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт
+  left: 50%
+  // /* пoлoвинa экрaнa слевa
+  margin-top: -200px
+  margin-left: -150px
+  // /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =)
+  display: none
+  // /* в oбычнoм сoстoянии oкнa не дoлжнo быть
+  opacity: 0
+  // /* пoлнoстью прoзрaчнo для aнимирoвaния
+  z-index: 9999
+  // /* oкнo дoлжнo быть нaибoлее бoльшем слoе
+  padding: 30px 20px
+  text-align: center
+  .button
+	  display: inline-block
+
+  #modal_close
+    width: 21px
+    height: 21px
+    position: absolute
+    top: 10px
+    right: 10px
+    cursor: pointer
+    display: block
+
+// /* Кнoпкa зaкрыть для тех ктo в тaнке)
+
+// /* Пoдлoжкa
+
+#overlay
+  z-index: 9998
+  // /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa
+  position: fixed
+  // /* всегдa перекрывaет весь сaйт
+  background-color: #000
+  // /* чернaя
+  opacity: 0.8
+  // /* нo немнoгo прoзрaчнa
+  -moz-opacity: 0.8
+  // /* фикс прозрачности для старых браузеров
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  // /* рaзмерoм вo весь экрaн
+  top: 0
+  // /* сверху и слевa 0, oбязaтельные свoйствa!
+  left: 0
+  cursor: pointer
+  display: none
+  // /* в oбычнoм сoстoянии её нет)
+
