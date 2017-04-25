@@ -1,7 +1,7 @@
 <?  
 
-if(isset($_POST['name1'])&&isset($_POST['tel1'])){
-	$to = 'bandrashko1@gmail.com'; //radiator0001@gmail.com
+if(isset($_POST['name_modal'])&&isset($_POST['tel_modal'])){
+	$to = 'bandrashko1@gmail.com, radiator0001@gmail.com';
 	$subject = 'Заявка с сайта KlopHunter.ru';
 	$message = '
 	<html>
@@ -9,8 +9,8 @@ if(isset($_POST['name1'])&&isset($_POST['tel1'])){
 		<title>'.$subject.'</title>
 	</head>
 	<body>
-		<p>Имя: '.htmlspecialchars($_POST['name1']).'</p>
-		<p>Телефон: '.htmlspecialchars($_POST['tel1']).'</p>
+		<p>Имя: '.htmlspecialchars($_POST['name_modal']).'</p>
+		<p>Телефон: '.htmlspecialchars($_POST['tel_modal']).'</p>
 	</body>
 	</html>';
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
@@ -18,7 +18,7 @@ if(isset($_POST['name1'])&&isset($_POST['tel1'])){
         mail($to, $subject, $message, $headers);
       }
 if(isset($_POST['name2'])&&isset($_POST['tel2'])){
-  $to = 'bandrashko1@gmail.com'; //radiator0001@gmail.com
+  $to = 'bandrashko1@gmail.com, radiator0001@gmail.com';
   $subject = 'Заявка с сайта KlopHunter.ru';
   $message = '
   <html>
@@ -34,8 +34,8 @@ if(isset($_POST['name2'])&&isset($_POST['tel2'])){
         $headers .= 'From: KlopHunter.ru';
         mail($to, $subject, $message, $headers);
       }
-if(isset($_POST['name3'])&&isset($_POST['tel3'])){
-  $to = 'bandrashko1@gmail.com'; //radiator0001@gmail.com
+if(isset($_POST['name_first'])&&isset($_POST['tel_first'])){
+  $to = 'bandrashko1@gmail.com, radiator0001@gmail.com';
   $subject = 'Заявка с сайта KlopHunter.ru';
   $message = '
   <html>
@@ -43,8 +43,8 @@ if(isset($_POST['name3'])&&isset($_POST['tel3'])){
     <title>'.$subject.'</title>
   </head>
   <body>
-    <p>Имя: '.htmlspecialchars($_POST['name3']).'</p>
-    <p>Телефон: '.htmlspecialchars($_POST['tel3']).'</p>
+    <p>Имя: '.htmlspecialchars($_POST['name_first']).'</p>
+    <p>Телефон: '.htmlspecialchars($_POST['tel_first']).'</p>
   </body>
   </html>';
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
@@ -63,7 +63,7 @@ if(isset($_POST['name3'])&&isset($_POST['tel3'])){
       	<meta  name="keywords"  content=""/>
       	<meta name="description"  content= ""/>
       	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-      	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+      	<link rel="stylesheet" type="text/css" href="css/myStyle.css"/>
 
 
       	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
@@ -83,6 +83,7 @@ if(isset($_POST['name3'])&&isset($_POST['tel3'])){
       </head><body>
 
       <div class="headLineThanks">
+      <div class="bgThanks"></div>
       	<div class="contentHeadThanks">
       		<p class="logoText">Уничтожение насекомых и<br>грызунов по Москве и МО</p>
       		<a href="tel:">
@@ -92,7 +93,7 @@ if(isset($_POST['name3'])&&isset($_POST['tel3'])){
       	</div>
       </div>
       <div class="block blockThanks">
-      	<img src="pic/thanksImg.png" class="thanksImg"/>
+      	<img src="img/thanksImg.png" class="thanksImg"/>
       	<div class="content">
 
       		<div class="blockThanksText">

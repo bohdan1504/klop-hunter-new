@@ -287,9 +287,7 @@ a.button {
 }
 
 .logoText {
-  font-family: 'Open Sans';
-  font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
   text-align: left;
   color: #fff;
   -webkit-transition: 0.5s;
@@ -1313,7 +1311,7 @@ a.callBack {
 
 #modal_form {
   width: 300px;
-  height: 400px;
+  height: auto;
   position: fixed;
   top: 45%;
   left: 50%;
@@ -1353,6 +1351,193 @@ a.callBack {
   left: 0;
   cursor: pointer;
   display: none;
+}
+
+.headLineThanks {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+.blockThanks {
+  z-index: 10;
+}
+
+.blockThanksText {
+  width: 550px;
+  float: right;
+  padding-top: 125px;
+}
+
+.blockThanksText:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.thanksTit {
+  font-weight: 300;
+  font-size: 60px;
+  color: #fff600;
+  padding: 72px 0px 20px 0;
+}
+
+.thanksTxt {
+  font-family: 'museo_sans';
+  font-weight: 100;
+  font-size: 26px;
+  margin-bottom: 70px;
+  color: #fff;
+}
+
+.thanksPodpis {
+  font-family: 'museo_sans';
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 160px;
+  color: #fff;
+}
+
+.thanksPodpis a {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.blockThanksSoci {
+  padding: 20px;
+}
+
+.thanksSociTit {
+  font-weight: 200;
+  font-size: 26px;
+  color: #666666;
+}
+
+.thanksSociPodpis {
+  font-weight: 200;
+  font-size: 20px;
+  color: #666;
+}
+
+.thanksSoci {
+  margin: 20px 0px;
+}
+
+.thanksSoci img {
+  margin: 0px 3px;
+}
+
+.blockThanksBack {
+  background-color: #ebebeb;
+}
+
+.blockThanksBack .content {
+  padding: 18px 0px;
+}
+
+.backLink {
+  font-family: 'museo_sans';
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 22px;
+  color: #00796b;
+  text-decoration: none;
+}
+
+.backLink:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: url("../img/backArr.png");
+  margin-right: 14px;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.thanksImg {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  -webkit-transform: translateX(-104%);
+      -ms-transform: translateX(-104%);
+          transform: translateX(-104%);
+  z-index: 5;
+}
+
+.butInst {
+  width: 194px;
+  height: 36px;
+}
+
+.butInst:before {
+  content: url("../img/inst.png");
+  display: inline-block;
+  vertical-align: middle;
+  margin: 3px 15px 0 0;
+}
+
+.bgThanks {
+  background-color: #fff;
+  background-image: url("../img/thanks_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.55) blur(5px);
+          filter: brightness(0.55) blur(5px);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+}
+
+.bgThanks .content {
+  height: auto;
+}
+
+.blockThanksMedia,
+.contentHeadThanks .butCallBack {
+  display: none;
+}
+
+.contentHeadThanks {
+  width: 840px;
+  margin: auto;
+  padding: 15px 0px;
+  z-index: 1;
+}
+
+.thanksPodpis a {
+  color: white;
+  text-decoration: none;
+}
+
+.thanksVideo {
+  width: 600px;
+  position: absolute;
+  top: 89px;
+  left: 0px;
+  z-index: 2;
+}
+
+.thanksVideo video {
+  width: 100%;
+}
+
+.tel::-moz-placeholder,
+.tel::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+:focus::-webkit-input-placeholder,
+:focus::-moz-placeholder,
+:focus:-moz-placeholder,
+:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1744,6 +1929,15 @@ a.callBack {
   .how-we-work .item {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
+  }
+
+  .title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .title p {
+    margin: 0 auto;
   }
 
   .input-div button {

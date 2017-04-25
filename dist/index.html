@@ -39,84 +39,80 @@
 		ga('send', 'pageview');
 
 	</script>
-	<form id="modal_form" class="form1"><!-- Сaмo oкнo -->
-		<p class="label">Бесплатная консультация</p>
-		<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
-		<div class="wrapInput">
-			<input type="text" name="name" placeholder="Ваше имя" class="editbox name required">
-		</div>
-		<div class="wrapInput">
-			<input type="tel" name="tel" placeholder="Телефон" class="editbox tel required">
-		</div>
-		<button class="button butForm">Позвоните мне</button>
-	</form>
-	<div id="overlay"></div><!-- Пoдлoжкa -->
-	<div class="w">
-		<section class="cd-section visible" id="section1">
-			<div>
-				<div class="block blockHeadline">
-					<div class="headline">
-						<div>
-							<p class="logoText">УНИЧТОЖЕНИЕ НАСЕКОМЫХ,<br>ГРЫЗУНОВ, ПЛЕСЕНИ И ЗАПАХОВ<br>ПО МОСКВЕ И МО</p>
-						</div>
-						<div class="topCenter">
-							<div class="wrapBut">
-								<button type="button" class="button butTop go">Бесплатная консультация
-								</button>
-							</div>
-						</div>
-						<div class="topContacts">
-							<a href="tel:+7 (495) 908-62-99" class="phoneTop"><span>+7 (495) 908-62-99</span></a>
-							<a class="go" href="#">заказать звонок</a>
-						</div>
-					</div>
-				</div>
+	<form id="modal_form" class="form1" method="POST"
+	action="sendmail.php"><!-- Сaмo oкнo -->
+	<p class="label">Бесплатная консультация</p>
+	<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
+	<div class="wrapInput">
+		<input type="text" name="name_modal" placeholder="Ваше имя" class="editbox name required">
+	</div>
+	<div class="wrapInput">
+		<input type="tel" name="tel_modal" placeholder="Телефон" class="editbox tel required">
+	</div>
+	<button class="button butForm">Позвоните мне</button>
+</form>
+<div id="overlay"></div><!-- Пoдлoжкa -->
 
-				<div class="block form1block">
-					<div class="bgImg"></div>
-					<div class="content">
-						<p class="fontBann1">ИЗБАВИМ ВАС</p>
-						<p class="fontBann2">от тараканов, муравьёв, клопов, клещей,<br>крыс, мышей, плесени.</p>
-						<p class="fontBann3">УЖЕ СЕГОДНЯ.</p>
-						<div class="bannContent">
-							<p class="bannContentTit">Уничтожение</p>
-							<p class="bannContentPodpis">насекомых, грызунов, плесени и неприятных запахов</p>
-							<div class="bannIco">
-								<div class="blBannContent left">
-									<p>за 1 час <span>в день обращения</span></p>
-								</div>
-								<div class="blBannContent right">
-									<p>с гарантией <span>на 1 год!</span></p>
-								</div>
-							</div>
+<div class="w">
+	<section class="cd-section visible" id="section1">
+		<div>
+			<div class="block blockHeadline">
+				<div class="headline">
+					<div>
+						<p class="logoText">УНИЧТОЖЕНИЕ НАСЕКОМЫХ,<br>ГРЫЗУНОВ, ПЛЕСЕНИ И ЗАПАХОВ<br>ПО МОСКВЕ И МО</p>
+					</div>
+					<div class="topCenter">
+						<div class="wrapBut">
+							<button type="button" class="button butTop go">Бесплатная консультация
+							</button>
 						</div>
 					</div>
-					<!--ФОРМа !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-					<div class="wrapTestForm">
-						<form id="form1" class="form1" method="POST" action="sendmail.php">
-							<div class="loadBar"></div>
-							<div id="fc1">
-								<p class="label">Бесплатная консультация</p>
-								<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
-								<div class="wrapInput">
-									<input type="text" class="editbox name required" name="name1" placeholder="Имя" txt="" value="" required="">
-								</div>
-								<div class="wrapInput">
-									<input type="text" class="editbox tel required" name="tel1" placeholder="Телефон" txt="" value="" required="">
-								</div>
-								<div class="wrapBut">
-									<button type="submit" class="button butForm" );">Узнать тонкости</button>
-									<!-- onclick="sending('#form1', '#fc1' -->
-									<input type="hidden" name="whatorder" value="Узнать тонкости в блоке теста">
-									<input type="hidden" name="tovar" value="">
-								</div>
-							</div>
-						</form>
+					<div class="topContacts">
+						<a href="tel:+7 (495) 908-62-99" class="phoneTop"><span>+7 (495) 908-62-99</span></a>
+						<a class="go" href="#">заказать звонок</a>
 					</div>
-					<!-- Конец формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 				</div>
 			</div>
-		</section>
+
+			<div class="block form1block">
+				<div class="bgImg"></div>
+				<div class="content">
+					<p class="fontBann1">ИЗБАВИМ ВАС</p>
+					<p class="fontBann2">от тараканов, муравьёв, клопов, клещей,<br>крыс, мышей, плесени.</p>
+					<p class="fontBann3">УЖЕ СЕГОДНЯ.</p>
+					<div class="bannContent">
+						<p class="bannContentTit">Уничтожение</p>
+						<p class="bannContentPodpis">насекомых, грызунов, плесени и неприятных запахов</p>
+						<div class="bannIco">
+							<div class="blBannContent left">
+								<p>за 1 час <span>в день обращения</span></p>
+							</div>
+							<div class="blBannContent right">
+								<p>с гарантией <span>на 1 год!</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--ФОРМа !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+				<div class="wrapTestForm">
+					<form id="form1" class="form1" method="POST" action="sendmail.php">
+						<p class="label">Бесплатная консультация</p>
+						<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
+						<div class="wrapInput">
+							<input type="text" class="editbox name required" name="name_first" placeholder="Имя" txt="" value="" required="">
+						</div>
+						<div class="wrapInput">
+							<input type="text" class="editbox tel required" name="tel_first" placeholder="Телефон" txt="" value="" required="">
+						</div>
+						<div class="wrapBut">
+							<button type="submit" class="button butForm">Узнать тонкости</button>
+						</div>
+					</form>
+				</div>
+				<!-- Конец формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+			</div>
+		</div>
+	</section>
 		<!-- <section class="cd-section visible" id="section2">
 			<div>
 				<div class="consult">
@@ -348,13 +344,13 @@
 						<div class="footRight">
 							<p class="autor"><span>Вёрстка:</span><a href="https://vk.com/b.andrashko" target="_blank"> Богдан Андрашко</a></p>
 							<p class="autor"><span>Дизайн:</span><a href="https://vk.com/id121902702" target="_blank"> Ярослав Носенко</a></p>
-							</a>	
-						</div>
-
+						</a>	
 					</div>
+
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 		<!-- <nav class="vertical-nav">
 			<ul>
 				<li><a href="#section1" class="active"></a></li>

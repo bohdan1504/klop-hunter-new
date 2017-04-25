@@ -121,9 +121,7 @@ a.button
     max-width: 95%
 
 .logoText
-  font-family: 'Open Sans'
-  font-weight: bold
-  font-size: 15px
+  font-size: 18px
   text-align: left
   color: #fff
   transition: 0.5s
@@ -1195,7 +1193,7 @@ a.callBack
 
 #modal_form
   width: 300px
-  height: 400px
+  height: auto
   // /* Рaзмеры дoлжны быть фиксирoвaны
   //border-radius: 5px
   //border: 3px #000 solid
@@ -1255,3 +1253,141 @@ a.callBack
   display: none
   // /* в oбычнoм сoстoянии её нет)
 
+.headLineThanks
+  position: fixed
+  width: 100%
+  left: 0px
+  top: 0px
+  z-index: 10
+
+.blockThanks
+	z-index: 10
+
+.blockThanksText
+  width: 550px
+  float: right
+  padding-top: 125px
+  &:after
+    content: " "
+    display: block
+    clear: both
+
+.thanksTit
+  font-weight: 300
+  font-size: 60px
+  color: #fff600
+  padding: 72px 0px 20px 0
+
+.thanksTxt
+  font-family: 'museo_sans'
+  font-weight: 100
+  font-size: 26px
+  margin-bottom: 70px
+  color: #fff
+
+.thanksPodpis
+  font-family: 'museo_sans'
+  font-weight: 100
+  font-size: 20px
+  margin-bottom: 160px
+  color: #fff
+  a
+    font-weight: 500
+    font-size: 30px
+
+.blockThanksSoci
+  padding: 20px
+
+.thanksSociTit
+  font-weight: 200
+  font-size: 26px
+  color: #666666
+
+.thanksSociPodpis
+  font-weight: 200
+  font-size: 20px
+  color: #666
+
+.thanksSoci
+  margin: 20px 0px
+  img
+    margin: 0px 3px
+
+.blockThanksBack
+  background-color: #ebebeb
+  .content
+    padding: 18px 0px
+
+.backLink
+  font-family: 'museo_sans'
+  font-weight: 100
+  font-size: 22px
+  line-height: 22px
+  color: $main-color
+  text-decoration: none
+  &:before
+    display: inline-block
+    vertical-align: middle
+    content: url('../img/backArr.png')
+    margin-right: 14px
+  &:hover
+  	text-decoration: underline
+
+.thanksImg
+  position: absolute
+  bottom: 18px
+  left: 50%
+  transform: translateX(-104%)
+  z-index: 5
+
+.butInst
+  width: 194px
+  height: 36px
+  &:before
+    content: url('../img/inst.png')
+    display: inline-block
+    vertical-align: middle
+    margin: 3px 15px 0 0
+.bgThanks
+	  background-color: #fff
+	  background-image: url('../img/thanks_bg.jpg')
+	  background-repeat: no-repeat
+	  background-size: cover
+	  filter: brightness(.55) blur(5px)
+	  transform: scale(1.05)
+	  position: absolute
+	  width: 100%
+	  height: 700px
+	  z-index: -1
+  	.content
+    height: auto
+
+.blockThanksMedia, .contentHeadThanks .butCallBack
+  display: none
+
+.contentHeadThanks
+  width: 840px
+  margin: auto
+  padding: 15px 0px
+  z-index: 1
+
+.thanksPodpis a
+	color: white
+	text-decoration: none
+
+.thanksVideo
+  width: 600px
+  position: absolute
+  top: 89px
+  left: 0px
+  z-index: 2
+  video
+    width: 100%
+
+.tel
+  &::-moz-placeholder, &::-webkit-input-placeholder
+    opacity: 1
+
+\:focus
+  &::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
+    color: transparent
