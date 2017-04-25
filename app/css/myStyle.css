@@ -1746,6 +1746,15 @@ a.callBack {
     width: calc(100% - 30px);
   }
 
+  .title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .title p {
+    margin: 0 auto;
+  }
+
   .input-div button {
     width: 300px !important;
     margin-top: 20px !important;
