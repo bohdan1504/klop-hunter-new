@@ -144,7 +144,7 @@ Main Components
 .cd-vertical-nav {
   /* lateral navigation */
   position: fixed;
-  z-index: 9999;
+  z-index: 9989;
   right: 3%;
   top: 50%;
   bottom: auto;

@@ -103,6 +103,65 @@ main {
   display: block;
 }
 
+.footer {
+  width: 100%;
+  background-color: #eee;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer .contentFoot {
+  max-width: 960px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.footer a {
+  color: #00796b;
+}
+
+.footPhone {
+  font-size: 20px;
+}
+
+.footLeft {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footRight {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px auto;
+}
+
 .cbalink {
   visibility: hidden;
   display: none;
@@ -114,7 +173,10 @@ section > div {
 
 body {
   font-family: Roboto;
-  background-color: red;
+}
+
+.topContacts a.go {
+  color: white;
 }
 
 .w {
@@ -603,7 +665,6 @@ a.button {
   border: none;
   outline: none;
   color: white;
-  font-size: 25px;
   padding: 8px 28px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -929,7 +990,6 @@ a.button {
 
 .free-consult-block .input-div input {
   width: 250px;
-  height: 32px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -1251,7 +1311,59 @@ a.callBack {
   padding: 30px 0 30px 0;
 }
 
+#modal_form {
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
+  display: none;
+  opacity: 0;
+  z-index: 9999;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#modal_form .button {
+  display: inline-block;
+}
+
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+#overlay {
+  z-index: 9998;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
+  .how-we-work {
+    margin-top: 30px;
+  }
+
+  .footer .footRight {
+    margin: 5px auto;
+  }
+
   .content,
   .headline {
     width: 1000px;
@@ -1295,6 +1407,10 @@ a.callBack {
 }
 
 @media screen and (max-width: 1050px) {
+  .footer {
+    position: static;
+  }
+
   .bg1,
   .bg2,
   .bg3,

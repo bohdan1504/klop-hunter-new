@@ -126,6 +126,10 @@ main {
   color: #00796b;
 }
 
+.footPhone {
+  font-size: 20px;
+}
+
 .footLeft {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
