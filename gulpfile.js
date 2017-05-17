@@ -25,15 +25,20 @@ gulp.task('sass', function(){
 
 gulp.task('scripts', function(){
     return gulp.src([
-        'app/libs/jquery/dist/jquery.min.js'
+        'app/js/main.js' //сдесь ставим файлы js, которые хотим минифицировать
     ])
-    .pipe(concat('libs.min.js'))
+    .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js/'))
 });
 
-gulp.task('css-libs', ['sass'], function(){
-    return gulp.src('app/css/libs.css')
+
+gulp.task('short-css', ['sass'], function(){
+    return gulp.src([
+                'app/css/myStyle.css',
+                'app/css/style.css',
+                'app/css/libs.css'
+            ])
     .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'));
@@ -58,16 +63,16 @@ gulp.task('clear', function(){
 
 gulp.task('img', function(){
     return gulp.src('app/img/**/*')
-    .pipe(cache(imagemin({
-        interlaced: true,
-        progressive: true,
-        svgoPlugins: [{removeViewBox: false}],
-        use: [pngquant()]
-    })))
+    // .pipe(cache(imagemin({
+    //     interlaced: true,
+    //     progressive: true,
+    //     svgoPlugins: [{removeViewBox: false}],
+    //     use: [pngquant()]
+    // }
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('default', ['browser-sync', 'css-libs', 'scripts'], function(){
+gulp.task('default', ['browser-sync', 'short-css', 'scripts'], function(){
     gulp.watch('app/sass/**/*.sass', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
@@ -76,11 +81,13 @@ gulp.task('default', ['browser-sync', 'css-libs', 'scripts'], function(){
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function(){
     var buildCss = gulp.src([
-        'app/css/libs.min.css',
-        'app/css/style.css',
-        'app/css/myStyle.css'
+        'app/css/**'
     ])
     .pipe(gulp.dest('dist/css'));
+    var buildSass = gulp.src([
+        'app/sass/**'
+    ])
+    .pipe(gulp.dest('dist/sass'));
 
     var buildFonts = gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts/'));

@@ -1,0 +1,288 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Klop Hunter</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+	<meta name="theme-color" content="#085733">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+   	
+	
+<body>
+
+
+<div style="padding-top: 1px;margin-top: -1px;"></div>
+<!--HIDDEN FORM-->
+<div id="hidform" onclick="unvisiCF()"></div>
+<form id="formh3" class="formh1" action="sendmail.php" accept-charset="utf-8" method="post">
+	<div class="close" onclick="unvisiCF('#formh3');"></div>
+	<div class="loadBar"></div>
+	<div id="fch3">
+		<p class="label">Закажите звонок</p>
+		<p class="labels">Оставьте свой номер телефона<br>и мы свяжемся с Вами в ближайшее время.</p>
+		<div class="wrapInput">
+			<input name="name" type="text" class="editbox name required" placeholder="Ваше имя" value="" required="" autocomplete="off">
+		</div>
+		<div class="wrapInput">
+			<input name="tel" type="text" class="editbox tel required" placeholder="Ваш телефон" value="" required="" autocomplete="off">
+		</div>
+		<div class="wrapBut">
+			<button type="submit" class="button butForm" >Отправить</button>
+			<input type="hidden" name="whatorder" value="">
+		</div>
+			
+	</div>
+</form>
+
+
+<!-- /HIDDEN FORM-->
+
+<div class="block blockHeadline">
+	<div class="headline">
+		<div>
+			<p class="logoText">УНИЧТОЖЕНИЕ НАСЕКОМЫХ,<br>ГРЫЗУНОВ, ПЛЕСЕНИ И ЗАПАХОВ<br>ПО МОСКВЕ И МО</p>
+		</div>
+		<div class="topCenter">
+			<div class="wrapBut">
+				<button type="button" class="button butTop" onclick="data('#formh3','Бесплатный выезд специалиста','Оставьте Ваши контакты и специалист приедет к Вам в течение 3 часов','Бесплатный выезд','Бесплатный выезд в футере');">БЕСПЛАТНЫЙ вызов СПЕЦИАЛИСТА
+			</button></div>
+		</div>
+		<div class="topContacts">
+			<a href="tel:+7 (495) 776-17-43" class="phoneTop"><span>+7 (495) 776-17-43</span></a>
+			<a class="callBack" href="#" onclick="data('#formh3','Заказать звонок','Укажите Ваш телефон и мы свяжемся с Вами для уточнения деталей','Заказать звонок','Заказать звонок в шапке'); return false;">заказать звонок</a>
+		</div>
+	</div>
+</div>
+
+<div class="block form1block">
+	<div class="content">
+		<p class="fontBann1">ИЗБАВИМ ВАС</p>
+		<p class="fontBann2">от тараканов, муравьёв, клопов, клещей,<br>крыс, мышей, плесени.</p>
+		<p class="fontBann3">УЖЕ СЕГОДНЯ.</p>
+		<div class="bannContent">
+			<p class="bannContentTit">Уничтожение</p>
+			<p class="bannContentPodpis">насекомых, грызунов, плесени и неприятных запахов</p>
+			<div class="bannIco">
+				<div class="blBannContent left">
+					<p>за 1 час <span>в день обращения</span></p>
+				</div>
+				<div class="blBannContent right">
+					<p>с гарантией <span>на 1 год!</span></p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!--ФОРМа !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<div class="wrapTestForm">
+				<form id="form1" class="form1" method="POST" action="sendmail.php">
+					<div class="loadBar"></div>
+					<div id="fc1">
+						<p class="label">Срочный вызов специалиста</p>
+						<p class="labels">Оставьте Ваши контакты, наш специалист приедет через 3 часа</p>
+						<div class="wrapInput">
+							<input type="text" class="editbox name required" name="name" placeholder="Имя" txt="" value="" required="">
+						</div>
+						<div class="wrapInput">
+							<input type="text" class="editbox tel required" name="tel" placeholder="Телефон" txt="" value="" required="">
+						</div>
+						<div class="wrapBut">
+							<button type="submit" class="button butForm" );">Узнать тонкости</button>
+							<!-- onclick="sending('#form1', '#fc1' -->
+							<input type="hidden" name="whatorder" value="Узнать тонкости в блоке теста">
+							<input type="hidden" name="tovar" value="">
+						</div>
+					</div>
+				</form>
+	</div>
+	<!-- Конец формы!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->		
+</div>	
+
+<div class="block blockUseLess">
+	<div class="content">
+		<div class="useLessContent">
+			<p class="useLess1">Не старайтесь самостоятельно избавиться от вредителя.</p>
+			<p class="useLess2"><span>Это бесполезно!</span></p>
+			<p class="useLess3">Вы только потратите время и нервы.</p>
+			<p class="useLess4">Через некоторое время вредитель снова появится.</p>
+			<p class="useLess5">Препараты в магазинах не профессиональные, вредитель уже к ним привык, их использование убивает только небольшое количество и этого хватает не надолго. Кроме того, по всему помещению будет стоять ужасная вонь.</p>
+		</div>
+		<div class="wrapButUseLess">
+			<button type="button" class="button butUseLess" onclick="data('#formh3','Консультация специалиста','Оставьте Ваши контакты и специалист свяжется с Вами в течение 6 минут','Консультация специалиста','Консультация специалистаа в блоке Не старайтесь.....');">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</button>
+		</div>
+	</div>
+</div>
+
+<div class="block blockUsePreparat">
+	<div class="content">
+		<div class="usePreparatContent">
+			<p class="big">Мы используем мощные препараты <br>и правильно их применяем.</p>
+							<p class="small">При использовании профессионального<br>оборудования это <span>вдвойне эффективнее.</span></p>
+				
+		</div>
+	</div>
+</div>
+
+<div class="block blockFreeCall">
+	<div class="content">
+		<div class="freeCallContent">
+			<p class="freeCallTit">Бесплатный вызов специалиста</p>
+			<form id="form4" class="form4" method="POST" action="sendmail.php">
+				<div class="loadBar"></div>
+				<div id="fc4">
+					<p class="label">Укажите Ваши контакты</p>
+					<p class="labels">наш специалист бесплатно к Вам приедет, проведет оценку, скажет точную стоимость, и подберет подходящий метод борьбы и препараты.</p>
+					<div class="wrapInput">
+						<input type="text" class="editbox name required" name="name" placeholder="Ваше имя" value="" required="">
+					</div>
+					<div class="wrapInput">
+						<input type="text" class="editbox tel required" name="tel" placeholder="Ваш телефон" value="" required="">
+					</div>
+					<div class="wrapBut">
+						<button type="submit" class="button butForm" );">Бесплатный вызов</button>
+						<input type="hidden" name="whatorder" value="Бесплатный вызов в блоке 'Бесплатный вызов специалиста на оценку'" >
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="block blockWhy">
+	<div class="content">
+		<p class="fontTit">И почему они такие  живучие?</p>
+		<p class="fontTitPodpis">Если Вы уже проводили уничтожение, <br>а вредитель все равно к Вам вернулся:</p>
+		<div class="whyLine">
+			<div class="whyDigit">1</div>
+			<div class="blWhy left img">
+				<img src="pic/why1.png"/>
+			</div>
+			<div class="blWhy right">
+				<p class="whyTit">Необходимо провести оценку и найти очаги.</p>
+				<p class="whyText">Для этого можно бесплатно<br>вызвать нашего специалиста.</p>
+				<div class="wrapBut">
+					<button type="button" class="button butWhy" onclick="data('#formh3','Бесплатный выезд специалиста','Оставьте Ваши контакты и специалист приедет к Вам в течение 3 часов','Бесплатный выезд','Бесплатный выезд в футере');">ВЫЗВАТЬ СПЕЦИАЛИСТА БЕСПЛАТНО</button>
+				</div>
+				
+			</div>
+		</div>
+		<div class="clr"></div>
+		<div class="whyLine">
+			<div class="whyDigit">2</div>
+			<div class="blWhy left">
+				<p class="whyTit">Нужно использовать <br>более мощные препараты.</p>
+				<p class="whyText">Вредитель быстро привыкает к слабым препаратам, <br>плюс они малоэффективны.</p>
+			</div>
+			<div class="blWhy right img">
+				<img src="pic/why2.jpg">
+			</div>
+			<div class="clr"></div>
+		</div>
+		<div class="whyLine">
+			<div class="whyDigit">3</div>
+			<div class="blWhy left img">
+				<img src="pic/why3.jpg">
+			</div>
+			<div class="blWhy right">
+				<p class="whyTit">Правильно приготовить препарат:</p>
+				<p class="whyText">Определенные пропорции, смешивать в отдельном<br>сосуде. Смесь необходимо использовать сразу поэтому </p>
+				<p class="whyPodpis">мы смешиваем препараты при Вас</p>
+			</div>
+		</div>
+		<div class="whyLine">
+			<div class="whyDigit">4</div>
+			<div class="blWhy left">
+				<p class="whyTit">Досконально обработать все очаги и <br>труднодоступные места.</p>
+				<p class="whyText">Часто дезинфекторы ленятся и проводят<br>поверхностно обработку, в результате многие<br>места остаются не обработаны.</p>
+				<p class="whyPodpis">Поэтому вредитель приходит снова.</p>
+				<div class="wrapBut">
+					<button type="button" class="button butWhySmall" onclick="data('#formh3','Бесплатный выезд специалиста','Оставьте Ваши контакты и специалист приедет к Вам в течение 3 часов','Бесплатный выезд','Бесплатный выезд в футере');">ИЗБАВИТЬСЯ НАВСЕГДА</button>
+				</div>
+			</div>
+			<div class="blWhy right top img">
+				<img src="pic/why4.png">
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+</div>
+
+<div class="block blockMixPreparat">
+	<div class="content">
+		<div class="mixPreparatContent">
+			<p class="mixPreparatTit">Мы при Вас смешаем препарат</p>
+			<p class="mixPreparatPodpis">Большинство компаний Вам в этом откажут, ведь часто недобросовестные дезинсекторы экономят, используя дешевые препараты, добавляют их меньше.</p>
+			<p class="mixPreparatSmallTit">Это экономия для них. Для Вас - деньги на ветер.</p>
+			<p class="mixPreparatSmallPodpis">Ведь неправильная консистенция, быстрое перемешивание,<br>слабые препараты - всё это причина тому, что</p>
+
+			<p class="mixPreparatFont1">Вредитель вернется через некоторое время.</p>
+			<p class="mixPreparatFont2">Хотите быть уверены,<br>что на Вас не экономят?</p>
+			<div class="wrapBut">
+				<button type="button" class="button butMixPreparat" onclick="data('#formh3','Бесплатный выезд специалиста','Оставьте Ваши контакты и специалист приедет к Вам в течение 3 часов','Бесплатный выезд','Бесплатный выезд в футере');">ХОЧУ БЫТЬ УВЕРЕН</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="block blockCleaning">
+	<div class="content">
+				<div class="cleanRamka">
+			<p class="cleanTit">Важно следить за чистотой!</p>
+			<ul class="cleanList">
+				<li>
+					<p class="cleanDigit">1</p>
+					<p class="cleanBigText">Войдите в помещение через 3 часа после процедуры</p>
+					<p class="cleanSmallText">и хорошо его проветрите, не менее 30 минут.</p>
+				</li>
+				<li>
+					<p class="cleanDigit">2</p>
+					<p class="cleanBigText">Протрите поверхности частого контакта</p>
+					<p class="cleanSmallText">ручки, шкафы, столы, полки - содовый раствор (50г на 1л воды) в резиновых перчатках.</p>
+				</li>
+				<li>
+						<p class="cleanDigit">3</p>
+						<p class="cleanBigText">Постирайте при высокой температуре постельное белье</p>
+						<p class="cleanSmallText">и как следует его прогладьте (в случае, если было уничтожение клопов).</p>
+				</li>
+				<li>
+					<p class="cleanDigit">4</p>
+					<p class="cleanBigText">Проведите генеральную уборку только через 14 дней</p>
+					<p class="cleanSmallText">если вы сделаете это раньше, то препарат не подействует должным образом.</p>
+				</li>
+			</ul>
+		</div>
+		<p class="fontCare">Мы заботимся о Вас. <span>Заботьтесь и Вы о себе.</span></p>		
+
+		<div class="wrapBut care">
+			<button type="button" class="button butCare" onclick="data('#formh3','Бесплатный вызов специалиста','Оставьте Ваши контакты и специалист приедет к Вам в течение 3 часов','Бесплатный выезд','Бесплатный вызов в блоке Мы заботимся о Вас.');">БЕСПЛАТНЫЙ ВЫЗОВ СПЕЦИАЛИСТА</button>
+		</div>
+	</div>
+</div>
+
+<div class="block footer">
+	<div class="content">
+		<div class="footCenter">
+			<a class="footPhone" href="tel:+7 (495) 776-17-43">+7 (495) 776-17-43</a>
+		</div>
+		
+		
+		<div class="footRight">
+				<p class="autor"><span>Создание сайта:</span> Богдан Андрашко</p><br>
+				<a href="https://vk.com/b.andrashko" target="_blank"><p class="autor2">vk.com/b.andrashko</p></a>	
+		</div>
+		
+	</div>
+</div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/ani.js"></script>
+<script src="js/docready.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.inputmask.js"></script>
+<script src="js/visiCF.js"></script>
+
+</body>
+</html>

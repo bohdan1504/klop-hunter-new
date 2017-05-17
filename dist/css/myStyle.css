@@ -162,6 +162,15 @@ main {
   margin: 15px auto;
 }
 
+.footTorg {
+  position: absolute;
+  bottom: 0;
+}
+
+.footTorg a {
+  color: #bbbbbb;
+}
+
 .cbalink {
   visibility: hidden;
   display: none;
@@ -172,7 +181,7 @@ section > div {
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .topContacts a.go {
@@ -683,7 +692,7 @@ a.button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 30px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   margin-left: 100px;
   padding-top: 30px;
@@ -1041,7 +1050,7 @@ a.button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .why-us-block .item {
@@ -1222,21 +1231,20 @@ a.button {
   margin-left: 90px;
 }
 
-@font-face {
-  src: url("../fonts/Roboto-Regular.ttf");
-  font-family: Roboto;
+.hidPhone {
+  display: none;
 }
 
 @font-face {
   font-family: 'museo';
-  src: url("../fonts/Museo_Cyrl_100.otf") format("opentype");
+  src: url("../fonts/museo_cyrl_100-webfont.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'museo';
-  src: url("../fonts/Museo_Cyrl_300.otf") format("opentype");
+  src: url("../fonts/museo_cyrl_300-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -1250,21 +1258,21 @@ a.button {
 
 @font-face {
   font-family: 'museo';
-  src: url("../fonts/Museo_Cyrl_700.otf") format("opentype");
+  src: url("../fonts/museo_cyrl_700-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'museo';
-  src: url("../fonts/Museo_Cyrl_900.otf") format("opentype");
+  src: url("../fonts/museo_cyrl_900-webfont.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'museo_sans';
-  src: url("../fonts/MuseoSansRegular.otf") format("truetype");
+  src: url("../fonts/museosansregular-webfont.woff") format("woff");
   font-style: normal;
 }
 
@@ -1592,6 +1600,29 @@ a.callBack {
 }
 
 @media screen and (max-width: 1050px) {
+  .footTorg {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footLeft {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+
   .footer {
     position: static;
   }
@@ -1645,7 +1676,7 @@ a.callBack {
     top: 0px;
     left: 0%;
     border: none;
-    padding: 5px;
+    padding: 5px 0;
     background: #f9f9f9;
   }
 
@@ -1744,6 +1775,13 @@ a.callBack {
   #section6 .consult,
   #section7 .consult {
     display: none;
+  }
+
+  .hidPhone {
+    display: block;
+    color: #00796b;
+    font-size: 20px;
+    margin: 3px auto;
   }
 }
 
@@ -1931,6 +1969,42 @@ a.callBack {
     width: calc(100% - 30px);
   }
 
+  .w {
+    margin-top: 20px;
+  }
+
+  .form1block {
+    height: 680px !important;
+  }
+
+  .fontBann2 {
+    font-size: 14px !important;
+  }
+
+  .tesis {
+    width: 80%;
+  }
+
+  .tesis p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .why-us-block {
+    margin-left: 0;
+  }
+
+  .footLeft {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .free-consult-block {
+    margin-top: 40px;
+  }
+
   .title {
     margin-left: 0;
     text-align: center;
@@ -2096,7 +2170,7 @@ a.callBack {
 
   .consult {
     margin: 0;
-    padding: 2px;
+    padding-bottom: 5px;
   }
 
   .consult button {
